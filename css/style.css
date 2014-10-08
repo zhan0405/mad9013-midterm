@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding:0;
+	margin:0;
+}	
+body{
+	font-size: 62.5%;	
+
+	background-color: #29697F;
+}
+h1, h2, h3{
+	font-weight: 700;	
+
+	color: #000;
+}
+h1{
+	font-size: 3.6rem;	
+	font-family: 'Pacifico'，cursive;
+}
+h2{
+	font-size: 3.0rem;	
+	font-family: 'Libre Baskerville',serif;
+}
+h3{
+	font-size: 1.8rem;
+	font-family:'Libre Baskerville',serif;
+	color: #494949;	
+}
+p, li, a{
+	font-weight: 400;
+	font-family: 'Oswald',sans-serif;
+	color: #555;		
+}
+p{
+	
+	font-size: 1.4rem;
+}
+li{
+	font-size: 1.4rem;
+}
+ol li{
+	
+	list-style-position:inside;
+}
+a{
+	font-size: 1.4rem;
+}	
+
+/***********************************
+					Layout
+***********************************/
+*{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.wrapper{
+	background-color: #29697F;	
+    width: 100%;
+}
+.masthead{
+	width: 100%;
+    clear: both;
+}
+.nav{
+		width: 100%;
+    clear: both;
+
+}
+.navbar{
+		width: 100%;
+        clear: both;
+
+
+}
+.main{
+    background:red;
+    width: 90%;
+    margin:  auto;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    clear: both;
+    padding: 1rem 1rem;
+	}
+.two{
+    background: yellow;
+    width: 90%;
+    margin: 0rem auto;
+    clear: both;
+    padding: 1rem 1rem;
+}
+.three{
+    background: green;
+    width: 90%;
+    margin:  auto;
+    margin-top: 2rem;
+    clear: both;
+    padding: 1rem 1rem;
+}
+.sidebar{
+	
+}
+.footer{
+    clear:both;	
+}
+
+    
+/***********************************
+					Masthead
+***********************************/
+.masthead h1{
+	/*padding: 30px 20px;*/
+    font-size: 2rem;
+    text-align: center;
+}
+
+/***********************************
+					Navigation
+***********************************/
+
+.navbar li{
+	float:left;	
+
+    width: 50%;
+    border: 1px solid white;
+	list-style:none;
+}
+.navbar a{
+	display: block;	
+
+	text-align: center;
+	text-decoration: none;
+	color: #333;
+	background-color: #e4e4e4;
+}
+.navbar a:visited,
+.navbar a:hover,
+.navbar a:active,
+.navbar a:focus{
+	color: #fff;
+	background-color: #333;
+}
+
+/***********************************
+					Content
+***********************************/
+.sidebar p{
+	font-size: 1.4rem;	
+}
+.instructions{
+	color: #C30;	
+}
+/***********************************
+					Footer
+***********************************/
+.footer p{
+
+	font-size: 1.2rem;
+	color: #999;	
+	background-color: #e4e4e4;
+}
+ @media all and (min-width: 500px) and (max-width: 719px){
+    .navbar li{
+        width: 25%;
+    }
+     .main {
+        display: block;
+         width: 90%;
+         margin: 3rem auto;
+         margin-bottom: 1rem;
+     }
+  .two {
+      display: inline-block;
+      clear: none;
+     float: left; 
+    width: 40%;
+      margin: 0 5% 1rem 5%;
+  }
+     
+    .three{
+        display: inline-block;
+    float: left;
+        clear: none;
+    width: 40%;
+      margin: 0 5% 1rem 5%;
+  }
+ }
+@media all and (max-width: 1080px) and (min-width: 720px){
+    .navbar li{
+        width: 25%;
+    }
+ .main {
+        display: inline-block;
+     clear: none;
+     float: left;
+         width: 40%;
+         margin: 2rem 2.5% 1rem 5%;
+     }
+  .two {
+      clear: none;
+      float: left;
+      width: 20%;
+      margin: 2rem 2.5% 1rem 2.5%;
+  }
+     
+    .three{
+        clear: none;
+        float: left;
+      width: 20%;
+      margin: 2rem 5% 1rem 2.5%;
+  }
+}
+@media all and (min-width: 1081px){
+    .nav {
+         float: left;
+         width: 15%;
+        clear: none;
+        margin: 2rem 1.5% 1rem 3%;
+    }
+.navbar li{
+    float: none;
+    width: 100%;
+   
+  }
+
+.main{
+    clear: none;
+    width: 30%;
+    float:left;
+    margin: 2rem 1.5% 1rem 1.5%;
+}    
+    .two{
+        clear: none;
+        width: 20%;
+        float:left;
+        margin: 2rem 1.5% 1rem 1.5%;
+    }
+    .three{
+        clear: none;
+        width: 20%;
+        float:left;
+        margin: 2rem 3% 1rem 1.5%;
+    }    
+}
